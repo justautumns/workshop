@@ -1,0 +1,35 @@
+ Speeches to make
+
+Before we begin to talk about how to debug your programs, we need to know what kind of issues
+we might have. Let's try to understand the bugs that might occur in your programs executions,
+1 .) Most often happens is "Segmentatíon Fault" what is it?
+	Seg fault : First of all what is segmentation? 
+	we could say segmentation is a process, when you run your program the OS divides your prog-
+	rams memory into two, Stack and Heap this process is called memory segmentation, and as you
+	can guess we have to deal with these memory blocks carefully, but what happens when we messd
+	up with these memory blocks? Well yes OS has to protect itself therefore it throws an error
+	and provide some information in a file called core dumped. There are two types of cause for
+	a seg fault, first messing up with stack part, you may ask we do not use malloc calloc or free
+	how can we have a memory error still with stack? Well when u declare a local variable like it 
+	stored in stack and in stack LIFO(last in first out) matters if u keep putting variables there
+	like with a recursive function eventually it will be called stack overflow, another part is when
+	certain amount of memory set in your variables like not only on stack, and try to reach out more 
+	than that memory size you'll get seg fault too. It's kind of same for the heap part, when u allocate
+	memory using malloc or calloc and then try to reach out more than u ask for usage in other saying 
+	another memory block:) u'll get seg fault as well, let's see with a few examples, in the firs example
+	we would like to write a little program in order to check how many pisciners passed the final exam:)
+2. ) Memory Leaks
+	As well mentioned earlier when we supposed to work with the heap which means dynamically allocated 
+	memory, we may have another issues even we well learnt how to handle seg faults, when we allocate 
+	a memory block we may counter some problems first one is allocation fauilure in this case we have 
+	to set that memory block as empty, we'll see how to do that, if allocation is successfull and we're
+	done with the variable we use, again we have to free that memory block we allocated in the first place
+	what happens if we don't? Well let's check that out:)
+
+3. ) How we can find out these errors mentioned? Well there are some tools we can use, first one we would 
+	like to show you is GDB, so what is GDB? It stand for Gnu DeBugger and it's an open source software tool
+	so as out codes are evolving so is GDB, anyway as mentioned earlier GDB uses core dump file to access what
+	cause the fault of your program when there's seg fault, but how? and how to use it? Let's check it out.
+4. ) Valgrind 
+
+5. ) Printf 
