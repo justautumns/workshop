@@ -25,9 +25,9 @@ void evaluate_exam(int *grades, int number_of_pisciners)
 	while (i < number_of_pisciners)
 	{
 		if (ptr[i] > 30)
-			printf("%d Success\n", i);
+			printf("Pisciner number : %d Success\n", i + 1);
 		else 
-			printf("%d Failure\n", i);
+			printf("Pisciner number : %d Failure\n", i + 1);
 		i++;
 	}
 }
