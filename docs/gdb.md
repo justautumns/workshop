@@ -70,12 +70,12 @@ Command : set variable
 Description: Modifies the value of a variable.
 Usage: set variable = value
 ------------------------------------------------------------------------------
-Command :run args
+Command : run args
 
 Description: Runs the program with specified arguments.
 Usage: run args
 ------------------------------------------------------------------------------
-Command :info locals
+Command : info locals
 
 Description: Shows the values of the variables.
 Usage: run args
