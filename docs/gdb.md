@@ -1,4 +1,5 @@
-Command : run
+## 🧑🏻‍💻 GDB Usage
+**Command : run
 
 Description: Runs the program.
 Usage: run [arg1 arg2 ...]
@@ -71,5 +72,10 @@ Usage: set variable = value
 Command :run args
 
 Description: Runs the program with specified arguments.
+Usage: run args
+------------------------------------------------------------------------------
+Command :info locals
+
+Description: Shows the values of the variables.
 Usage: run args
 ------------------------------------------------------------------------------
