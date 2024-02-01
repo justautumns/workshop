@@ -1,5 +1,6 @@
 ## 🧑🏻‍💻 GDB Usage
-**Command : run
+
+Command : run
 
 Description: Runs the program.
 Usage: run [arg1 arg2 ...]
