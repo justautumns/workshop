@@ -4,9 +4,9 @@
 
 ## Tools
 - `printf`
-- [`valgrind`](https://github.com/justautumns/workshop/blob/main/docs/valgrind.txt)
-- [`lldb`](https://github.com/justautumns/workshop/blob/main/docs/lldb.txt)
-- [`gdb`](https://github.com/justautumns/workshop/blob/main/docs/gdb.txt)
+- [`valgrind`](https://github.com/justautumns/workshop/blob/main/docs/valgrind.md)
+- [`lldb`](https://github.com/justautumns/workshop/blob/main/docs/lldb.md)
+- [`gdb`](https://github.com/justautumns/workshop/blob/main/docs/gdb.md)
 
 ## Authors
 - Github: [@justautumns](https://github.com/justautumns)
