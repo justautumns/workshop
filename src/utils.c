@@ -20,8 +20,7 @@ void	evaluate_exam(int *grades, int number_of_pisciners)
 	int	*ptr;
 
 	ptr = NULL;
-	(void) grades;
-	grades = ptr;
+	grades[0] = *ptr;
 	i = 0;
 	while (i < number_of_pisciners)
 	{
