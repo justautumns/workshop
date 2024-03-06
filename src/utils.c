@@ -10,32 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
 
-void evaluate_exam(int *grades, int number_of_pisciners)
+void	evaluate_exam(int *grades, int number_of_pisciners)
 {
 	int	i;
-	int *ptr;
+	int	*ptr;
 
 	ptr = NULL;
+	(void) grades;
 	grades = ptr;
 	i = 0;
 	while (i < number_of_pisciners)
 	{
 		if (ptr[i] > 30)
 			printf("Pisciner number : %d Success\n", i + 1);
-		else 
+		else
 			printf("Pisciner number : %d Failure\n", i + 1);
 		i++;
 	}
 }
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int m;
+	int	m;
 
 	m = 0;
 	while (str[m])
@@ -45,11 +45,11 @@ int ft_strlen(char *str)
 	return (m);
 }
 
-char *lets_use_malloc(char *str)
+char	*lets_use_malloc(char *str)
 {
-	int	i;
-	int m;
-	char *tmp;
+	int		i;
+	int		m;
+	char	*tmp;
 
 	i = ft_strlen(str);
 	m = 0;

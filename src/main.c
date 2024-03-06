@@ -10,20 +10,30 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+void	evaluate_exam(int *grades, int number_of_pisciners);
+char	*lets_use_malloc(char *str);
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-
-void evaluate_exam (int *grades, int number_of_pisciners);
-char *lets_use_malloc(char *str);
-
-int main(void)
+void	get_exam_results(int *store)
 {
-	// int	final_exam_results[5000000] = {20, 60, 45, 30, 100, 90, 42, 70, 80};
-	int	final_exam_results[10] = {20, 60, 45, 30, 100, 90, 42, 70, 80};
-	evaluate_exam(final_exam_results, 5);
-	char *str = "Bla bla";
-	char *new_str = lets_use_malloc(str);
+	store[0] = 20;
+	store[1] = 60;
+	store[2] = 45;
+	store[3] = 30;
+	store[4] = 100;
+	store[5] = 90;
+	store[6] = 42;
+	store[7] = 70;
+	store[8] = 80;
+}
+
+int	main(void)
+{
+	char	*str;
+	int		final_exam_results[9];
+
+	get_exam_results(final_exam_results);
+	evaluate_exam(final_exam_results, 9);
+	str = "Bla bla";
+	lets_use_malloc(str);
 	return (0);
 }
